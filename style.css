@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  --Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+  --Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  margin: 0 5rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4rem;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li a {
+  margin: 0 30px;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--Desaturated-Blue);
+  font-weight: 700;
+}
+.header,
+.team,
+.sign-in .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
+}
+.header .content-header {
+  margin-right: 3rem;
+}
+.header .content-header h1,
+.sign-in .container .row h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.header .content-header p,
+.sign-in .container .row p {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+  font-size: 19px;
+  color: var(--Desaturated-Blue);
+  margin-top: 1rem;
+}
+.header .content-header input,
+.sign-in .container .column input {
+  border: 0;
+  margin: 1rem 1rem 0 0;
+  padding: 14px 192px 14px 15px;
+  border-radius: 3px;
+}
+.header .content-header button,
+.sign-in .container .column button {
+  font-family: "Raleway", sans-serif;
+  padding: 16px 50px;
+  border: 0;
+  background-color: var(--Bright-Blue);
+  color: white;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.header img {
+  max-width: 100%;
+}
+
+.team {
+  margin: 10rem 0;
+  background-image: url(images/bg-curve-desktop.svg);
+}
+.team .row h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.team .row > p {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
+  color: var(--Desaturated-Blue);
+  margin-top: 1rem;
+  margin-right: 8rem;
+  font-weight: 600;
+}
+.team .row section {
+  margin-top: 1rem;
+  color: var(--Moderate-Cyan);
+  border-bottom: 1px solid var(--Moderate-Cyan);
+  width: 171px;
+  display: flex;
+  flex-direction: row;
+}
+.team .row section img {
+  margin-left: 4px;
+  margin-top: 3px;
+  width: 22px;
+}
+.team .row .box {
+  width: 392px;
+  margin-top: 3rem;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 25px 15px 25px 34px;
+}
+.team .row .box > img {
+  width: 20px;
+  margin-bottom: 10px;
+}
+.team .row .box > p {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+  font-size: 15px;
+  color: var(--Desaturated-Blue);
+  margin-bottom: 15px;
+}
+.team .row .box .avatar {
+  display: flex;
+  height: 40px;
+}
+.team .row .box .avatar img {
+  width: 40px;
+  border-radius: 50%;
+}
+.team .row .box .avatar .main-avatar {
+  margin-left: 17px;
+}
+.team .row .box .avatar .main-avatar h3 {
+  font-size: 15px;
+  color: var(--Dark-Blue);
+}
+.team .row .box .avatar .main-avatar p {
+  font-size: 12px;
+  color: var(--Desaturated-Blue);
+}
+
+.team .team-img img {
+  max-width: 90%;
+  padding-left: 4rem;
+}
+
+/* sign-in start */
+.sign-in {
+  background-color: var(--Desaturated-Blue);
+  padding: 1px 1px;
+}
+.sign-in .container .column {
+  margin-left: 135px;
+}
+.sign-in .container .row h2 {
+  font-size: 35px;
+  color: white;
+}
+.sign-in .container .row p {
+  color: white;
+  font-size: 15px;
+  margin: 2rem 13rem 5rem 0;
+}
+.sign-in .container .column input {
+  padding-right: 280px;
+}
+.sign-in .container .column button {
+  display: block;
+  margin-top: 20px;
+}
+/* sign-in end */
+footer {
+  background-color: var(--Dark-Blue);
+}
+footer .container > img{
+  margin-top: 100px;
+}
+footer .row {
+  display: flex;
+  color: var(--Light-Gray);
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-right: 300px;
+  padding-bottom: 60px;
+  margin-top: 40px;
+}
+footer .row .contant{
+  line-height: 2;
+  margin-top: 6px;
+}
+footer .row .contant img{
+  margin-right: 20px;
+}
+footer .container .row  ul li{
+  list-style: none;
+  line-height: 3;
+}
